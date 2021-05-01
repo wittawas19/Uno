@@ -34,13 +34,17 @@ public class GameStage extends javax.swing.JFrame {
      */
     public GameStage(ArrayList<String> playerIds) {
         initComponents();
+        System.out.println("1");
         temp = playerIds ; 
+        System.out.println("2");
         pids = temp.toArray(new String[temp.size()]);
+        System.out.println("3");
         game = new Game(pids);
+        System.out.println("4");
         populateArrayList();
         game.start(game);
         setPidName();
-        topCardButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PNGs/small/"+ game.getTopCardImage())));
+        topCardButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\"+ game.getTopCardImage()));
         setButtonIcons();
     }
 
@@ -54,7 +58,7 @@ public class GameStage extends javax.swing.JFrame {
         cardIds = new ArrayList<>(Arrays.asList(cardNames));
         for(int i = 0; i < cardIds.size(); i++)
         {
-            cardButtons.get(i).setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PNGs/small/"+cardIds.get(i)+".png")));
+            cardButtons.get(i).setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\"+cardIds.get(i)+".png"));
         }
         for(int i = cardIds.size(); i < cardButtons.size();i++)
         {
@@ -252,7 +256,7 @@ public class GameStage extends javax.swing.JFrame {
             }
         });
 
-        downCard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uno/images/PNGs/small/Card_Back.png"))); // NOI18N
+        downCard.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\Card_Back.png")); // NOI18N
         downCard.setText("jButton17");
 
         topCardButton.setText("jButton18");

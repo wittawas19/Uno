@@ -21,7 +21,7 @@ public class UnoDeck {
     {        
         
         cards = new UnoCard[108];
-        reset();
+        //reset();
     }
     
     public void reset() {

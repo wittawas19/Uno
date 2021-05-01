@@ -33,7 +33,7 @@ public class PopUp extends javax.swing.JFrame {
         playerHand = game.getPlayerHand(game.getCurrentId());
         choice = index;
         this.cardButtons = cardButtons;
-        cardLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PNGs/large"+ cardImage + ".png")));
+        cardLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\large\\"+ cardImage + ".png"));
         this.gameStage = gamestage; 
         this.topCardButton = topCardButton;
         
@@ -54,6 +54,9 @@ public class PopUp extends javax.swing.JFrame {
         cardLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(450, 450));
+
+        jPanel1.setPreferredSize(new java.awt.Dimension(450, 450));
 
         useCardButton.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
         useCardButton.setText("Use Card");
@@ -103,11 +106,11 @@ public class PopUp extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
 
         pack();
@@ -136,7 +139,7 @@ public class PopUp extends javax.swing.JFrame {
            {
                gameStage.setPidName(game.getCurrentId());
                gameStage.setButtonIcons();
-               topCardButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PNGs/small"+ game.getTopCardImage())));
+               topCardButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\"+ game.getTopCardImage()));
                this.dispose();
            }
            

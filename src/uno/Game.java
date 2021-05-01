@@ -32,6 +32,7 @@ public class Game {
     public Game(String[] ids)
     {
         deck = new UnoDeck();
+        
         deck.shuffleDeck();
         stockPile = new ArrayList<UnoCard>();
         

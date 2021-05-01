@@ -138,7 +138,7 @@ public class PickColorFrame extends javax.swing.JFrame {
         popUp.gameStage.setPidName(popUp.game.getCurrentId());
         popUp.gameStage.setButtonIcons();
     
-        popUp.topCardButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PNGs/small/"+popUp.game.getTopCardImage())));
+        popUp.topCardButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\"+popUp.game.getTopCardImage()));
         popUp.game.setCardColor(UnoCard.Color.Green);
         popUp.dispose();
     }//GEN-LAST:event_greenButtonActionPerformed
@@ -154,7 +154,7 @@ public class PickColorFrame extends javax.swing.JFrame {
         popUp.gameStage.setPidName(popUp.game.getCurrentId());
         popUp.gameStage.setButtonIcons();
     
-        popUp.topCardButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PNGs/small/"+popUp.game.getTopCardImage())));
+        popUp.topCardButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\"+popUp.game.getTopCardImage()));
         popUp.game.setCardColor(UnoCard.Color.Red);
         popUp.dispose();
     }//GEN-LAST:event_redButtonActionPerformed
@@ -170,7 +170,7 @@ public class PickColorFrame extends javax.swing.JFrame {
         popUp.gameStage.setPidName(popUp.game.getCurrentId());
         popUp.gameStage.setButtonIcons();
     
-        popUp.topCardButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/PNGs/small/"+popUp.game.getTopCardImage())));
+        popUp.topCardButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\"+popUp.game.getTopCardImage()));
         popUp.game.setCardColor(UnoCard.Color.Blue);
         popUp.dispose();
     }//GEN-LAST:event_blueButtonActionPerformed
@@ -186,7 +186,7 @@ public class PickColorFrame extends javax.swing.JFrame {
         popUp.gameStage.setPidName(popUp.game.getCurrentId());
         popUp.gameStage.setButtonIcons();
     
-        popUp.topCardButton.setIcon(new javax.swing.ImageIcon("/images/PNGs/small/"+popUp.game.getTopCardImage()));
+        popUp.topCardButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\PREDATOR\\Desktop\\images1\\PNGs\\small\\"+popUp.game.getTopCardImage()));
         popUp.game.setCardColor(UnoCard.Color.Yellow);
         popUp.dispose();
     }//GEN-LAST:event_yellowButtonActionPerformed
